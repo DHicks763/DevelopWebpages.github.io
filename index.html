@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevelopWebpages — Snippets & Inspiration</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>DevelopWebpages</h1>
+      <p class="tagline">Practical webpage building blocks, copy-ready snippets & creative prompts.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="learning-path">
+      <h2>Learning path</h2>
+      <p>Start with HTML basics, move to CSS layout, then components and accessibility. Below are bite-sized examples you can copy.</p>
+      <ul>
+        <li>HTML fundamentals: semantic structure, headings, lists</li>
+        <li>CSS basics: box model, flexbox, grid</li>
+        <li>Components: navbars, cards, forms</li>
+        <li>Accessibility & Performance: semantic landmarks, image alt, minification</li>
+      </ul>
+    </section>
+
+    <section id="starter-templates">
+      <h2>Starter templates</h2>
+
+      <div class="card" data-slug="responsive-header">
+        <h3>Responsive Header</h3>
+        <p>Simple responsive header with a logo and nav.</p>
+        <div class="card-actions">
+          <button class="copy-btn" data-target="#code-resp-header">Copy</button>
+          <button class="copy-link-btn" data-slug="responsive-header">Copy Link</button>
+        </div>
+        <pre><code id="code-resp-header">
+&lt;header class="site-header"&gt;
+  &lt;div class="container"&gt;
+    &lt;a href="/" class="logo"&gt;Logo&lt;/a&gt;
+    &lt;nav&gt;
+      &lt;a href="#features"&gt;Features&lt;/a&gt;
+      &lt;a href="#snippets"&gt;Snippets&lt;/a&gt;
+      &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+        </code></pre>
+      </div>
+
+      <div class="card" data-slug="flex-two-column">
+        <h3>Two-column responsive layout (Flexbox)</h3>
+        <p>Simple, well-behaved two-column layout that stacks on small screens.</p>
+        <div class="card-actions">
+          <button class="copy-btn" data-target="#code-two-column">Copy</button>
+          <button class="copy-link-btn" data-slug="flex-two-column">Copy Link</button>
+        </div>
+        <pre><code id="code-two-column">
+&lt;div class="two-col"&gt;
+  &lt;main&gt;Main content&lt;/main&gt;
+  &lt;aside&gt;Sidebar&lt;/aside&gt;
+&lt;/div&gt;
+
+<style>
+.two-col { display:flex; gap:1rem; }
+.two-col main { flex:2 }
+.two-col aside { flex:1 }
+@media (max-width:720px) {
+  .two-col { flex-direction:column; }
+}
+</style>
+        </code></pre>
+      </div>
+    </section>
+
+    <section id="design-inspiration">
+      <h2>Design inspiration & quick prompts</h2>
+      <p>Use these prompts to experiment or feed into a design tool/AI:</p>
+      <ul class="prompts">
+        <li>"Minimal portfolio layout with large hero, soft rounded cards, and muted pastel palette."</li>
+        <li>"Retro neon landing page with bold typography and a glassmorphism signup card."</li>
+        <li>"Accessible government-style form: high contrast, large inputs, clear step-by-step progress."</li>
+      </ul>
+    </section>
+
+    <section id="color-palettes">
+      <h2>Color palettes (click to copy hex)</h2>
+
+      <div class="palette">
+        <button class="copy-palette-btn" data-palette="#0f172a,#1e293b,#94a3b8,#f8fafc">Copy Palette</button>
+        <div class="swatches">
+          <div class="swatch" style="background:#0f172a">#0f172a</div>
+          <div class="swatch" style="background:#1e293b">#1e293b</div>
+          <div class="swatch" style="background:#94a3b8">#94a3b8</div>
+          <div class="swatch" style="background:#f8fafc">#f8fafc</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="accessibility-checklist">
+      <h2>Accessibility checklist</h2>
+      <ul>
+        <li>All images have descriptive <code>alt</code>.</li>
+        <li>Page landmarks (header, nav, main, footer) are present.</li>
+        <li>Color contrast meets 4.5:1 for text (AA) or 3:1 for large text.</li>
+        <li>Keyboard navigation is supported (tab order, :focus styles).</li>
+      </ul>
+    </section>
+
+    <section id="contribute">
+      <h2>Contribute</h2>
+      <p>Submit new snippets by opening a PR or adding issues that describe the snippet and its intention.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© DevelopWebpages ��� Share snippets freely — add license in README.</small>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
